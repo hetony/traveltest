@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>t Hack</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+
+                    $("#airport-choice").change(function () {
+                        $("#hotel-choice").load("hotels/" + $(this).val() + ".txt");
+                    });
+                }
+        )
+    </script>
+
+</head>
+<body>
+
+
+
+<select id="airport-choice">
+    <option selected value="base">Please Select Airport</option>
+    <option value="NYC">New York City</option>
+    <option value="ATL">Atlanta</option>
+</select>
+
+<br>
+
+<select id="hotel-choice">
+    <option>Please choose from above</option>
+</select>
+
+</body>
+</html>
